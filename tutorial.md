@@ -3,8 +3,11 @@
  [ 2021-11-26 ] venv 가상환경 설치 
  [ 2021-11-26 ] venv 가상환경 설치방법 
  [ 2021-11-26 ] venv 가상환경에 pip 파일을 설치하기 전 준비단계 
+ [ 2021-11-26 ] django 설치 ! 
  
- ** github 프로젝트 올리는 방법 **
+
+ [[ 2021-11-26 ] github 연결방법 정리]
+ ** github 프로젝트 올리는 방법 **   
  0. gitbash 설치  
  1. github에 접속해서 새로운 프로젝트를 생성한다. 
  2. cmd 창을 열어서 - git config --global user.name '이름'                
@@ -17,6 +20,7 @@
  7. [cmd창에서] git commit -m "저장하면서 적을 내용"   
 
 
+ [[ 2021-11-26 ] venv 가상환경 설치 , [ 2021-11-26 ] venv 가상환경 설치방법]
  ** venv 가상환경 설치 방법 **
  1. vscode에서 cmd 창을 연다.
  2. [cmd창에서] python -m venv '폴더 명'
@@ -25,9 +29,18 @@
  5. [cmd창에서] 가상환경 빠져 나오기 deActivate  
 
 
+[ [ 2021-11-26 ] venv 가상환경에 pip 파일을 설치하기 전 준비단계 ]
  ** 본격적인 가상환경 안에 파일을 설치 하기전 준비단계 **
  1. [cmd창에서] pip list 입력하여 현재 설치된 pip 파일들을 확인한다.
  2. [cmd창에서] 입력 후 [ You should consider upgrading via the 
                         'c:\users\wjddn\onedrive\바탕 화면\demo_type\total_lib_box\scripts\python.exe -m pip install --upgrade pip' command. ]
                         이러한 문구가 뜬다면 [cmd창에서] pip install --upgrade pip 입력을 한 후 다시 pip list을 입력해 보자 ( 문구가 사라져 있음 )
+
+[ [ 2021-11-26 ] django 설치 !]
+** 장고 설치 **
+1. [cmd창에서] 가상환경에서 pip install Django 입력 후 잘 깔렸는지 pip list로 확인해 보자
+
+
+** 장고 새로운 프로젝트 생성 **
+
  
