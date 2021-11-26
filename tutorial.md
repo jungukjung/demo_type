@@ -2,6 +2,7 @@
  [ 2021-11-26 ] github 연결방법 정리 
  [ 2021-11-26 ] venv 가상환경 설치 
  [ 2021-11-26 ] venv 가상환경 설치방법 
+ [ 2021-11-26 ] venv 가상환경에 pip 파일을 설치하기 전 준비단계 
  
  ** github 프로젝트 올리는 방법 **
  0. gitbash 설치  
@@ -22,4 +23,11 @@
  3. [cmd창에서] 접속 방법 - cd '폴더명'/Scripts                 
  4. [cmd창에서] Activate 입력 왼쪽에 (폴더명)이 뜬다면 적용 완료
  5. [cmd창에서] 가상환경 빠져 나오기 deActivate  
+
+
+ ** 본격적인 가상환경 안에 파일을 설치 하기전 준비단계 **
+ 1. [cmd창에서] pip list 입력하여 현재 설치된 pip 파일들을 확인한다.
+ 2. [cmd창에서] 입력 후 [ You should consider upgrading via the 
+                        'c:\users\wjddn\onedrive\바탕 화면\demo_type\total_lib_box\scripts\python.exe -m pip install --upgrade pip' command. ]
+                        이러한 문구가 뜬다면 [cmd창에서] pip install --upgrade pip 입력을 한 후 다시 pip list을 입력해 보자 ( 문구가 사라져 있음 )
  
