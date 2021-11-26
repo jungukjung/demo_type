@@ -4,6 +4,7 @@
  [ 2021-11-26 ] venv 가상환경 설치방법 
  [ 2021-11-26 ] venv 가상환경에 pip 파일을 설치하기 전 준비단계 
  [ 2021-11-26 ] django 설치 ! 
+ [ 2021-11-27 ] django 새로운 프로젝트 생성 및 실행
  
 
  [[ 2021-11-26 ] github 연결방법 정리]
@@ -40,7 +41,12 @@
 ** 장고 설치 **
 1. [cmd창에서] 가상환경에서 pip install Django 입력 후 잘 깔렸는지 pip list로 확인해 보자
 
-
-** 장고 새로운 프로젝트 생성 **
-
+[ [ 2021-11-27 ] django 새로운 프로젝트 생성 및 실행 ]
+** django 새로운 프로젝트 생성 및 실행 **
+1. 가상환경 폴더 밖으로 빠져 나온다 [..cd]
+2. django-admin startproject '생성할 프로젝트 이름'
+3. 생성된 폴더로 접근한다 [정확이는 manage.py 파일이 있는 폴더까지 접근한다, 
+                           여기서 manage.py 파일은 django 파일을 실행시키기 위한 스위치 같은 기능을 가지고 있다.]
+4. python manage.py runserver 입력 후 나온 [http://127.0.0.1:8000/] 주소 창을 인터넷 창에 입력하고 접근해 본다.
+                                           [The install worked successfully! Congratulations! 문구가 뜬다면 성공 ! ]
  
