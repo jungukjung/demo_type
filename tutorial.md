@@ -1,11 +1,14 @@
  ** 타임라인 ** 
- [ 2021-11-26 ] github 연결방법 정리 
- [ 2021-11-26 ] venv 가상환경 설치 
- [ 2021-11-26 ] venv 가상환경 설치방법 
- [ 2021-11-26 ] venv 가상환경에 pip 파일을 설치하기 전 준비단계 
- [ 2021-11-26 ] django 설치 ! 
- [ 2021-11-27 ] django 새로운 프로젝트 생성 및 실행
- [ 2021-11-27 ] django 초기 html 적용순서
+ [ 2021-11-26 ] [github] 연결방법 정리 
+ [ 2021-11-26 ] [venv]   가상환경 설치 
+ [ 2021-11-26 ] [venv]   가상환경 설치방법 
+ [ 2021-11-26 ] [venv]   가상환경에 pip 파일을 설치하기 전 준비단계 
+ [ 2021-11-26 ] [django] 설치 ! 
+ [ 2021-11-27 ] [django] 새로운 프로젝트 생성 및 실행
+ [ 2021-11-27 ] [django] 초기 html 적용순서
+ [ 2021-11-27 ] [django] startapp 생성방법
+ <!-- [ 2021-11-27 ] [django] startproject 와 startapp 연결방법  -->
+ 
  
 
  [[ 2021-11-26 ] github 연결방법 정리]
@@ -38,9 +41,11 @@
                         'c:\users\wjddn\onedrive\바탕 화면\demo_type\total_lib_box\scripts\python.exe -m pip install --upgrade pip' command. ]
                         이러한 문구가 뜬다면 [cmd창에서] pip install --upgrade pip 입력을 한 후 다시 pip list을 입력해 보자 ( 문구가 사라져 있음 )
 
+
 [ [ 2021-11-26 ] django 설치 !]
 ** 장고 설치 **
 1. [cmd창에서] 가상환경에서 pip install Django 입력 후 잘 깔렸는지 pip list로 확인해 보자
+
 
 [ [ 2021-11-27 ] django 새로운 프로젝트 생성 및 실행 ]
 ** django 새로운 프로젝트 생성 및 실행 **
@@ -58,6 +63,64 @@
 2. 기본 base가 될  html 파일을 생성한다. 
 3. project 폴더에 있는 settings.py 파일을 열고 [ TEMPLATES = [] ] 구간에 있는 곳에서 생성한 templates 폴더 경로를 적어준다.
                                                                             - os.path.join(BASE_DIR,'templates') 적어주기 
+
+[ [ 2021-11-27 ] [django] startapp 생성방법 ]
+** [django] startapp 생성방법 **
+1. django-admin startapp '생성할 폴더이름'
+2. [생성한 폴더] 안에 urls.py 만들어주기   -- > 해당 폴더가 가지고 있는 역활 갯 수
+                                           -- > path('view/  [이동할 경로]',total_view_app_vi [이동한 후 보여 줄 내용물],name='view'),
+                                           -- > app_name = 'total_view_app' [함수형 호출][페이지이동시]   --> 해당 폴더의 경로를 담아둔다 추후 가독성과 적어야 하는 url 길이가 단축된다.
+
+3. [생성한 폴더] templates 폴더 만들어주기 -- >  url 경로가 변경 될 때마다 해당 url이 담고 있는 html 파일 생성하기
+                                           -- >  만드는 형식은 
+                                           -- >  1.templates 폴더 생성
+                                           -- >  2.templates 폴더 안에다가 생성한 startapp 폴더명으로으로 폴더 하나를 더 생성
+                                           -- >  templates 
+                                                   - total_view_app
+
+4. html 파일 생성    -- >  templates 
+                            - total_view_app
+                               - '작명'.html
+
+
+
+
+
+<!-- [ [ 2021-11-27 ] [django] startproject 와 startapp 연결방법 ]
+** django startproject 와 startapp 연결방법 **
+1. settings.py 파일을 열어서 생성한 startapp 폴더를 등록해주기  -- > INSTALLED_APPS = [] 에 '생성한 폴더명'
+2. startproject에 있는 urls.py에 가서 경로 이어주기             -- > path('total_view_app/  [경로] ',include("total_view_app.urls")[url분할],name='total_view_app'),
+3. startapp에 views.py을 열어서 기존에 [ [ 2021-11-27 ] [django] startapp 생성방법 ]에 2번 내용적은 [이동한 후 보여 줄 내용물]을 만들어준다.
+                                                                -- > def total_view_app_vi [함수명](request):[요청]
+
+                                                                        context ={}[보내면서 같이 보낼 데이터 박스]
+
+                                                                        return render(request[요청],'total_view_app/view.html'[뿌려질 화면],context[데이터])
+4. 3번에서 만든 내용물 [urls.py]로 가서 import 해준다.  -- > from .views import total_view_app_vi
+5. 최상위에 있는 [templates] 폴더에 있는 [base.html] 파일을 분할한다.    -- > 1. <head></head> 태그 부분을 잘라내기 한다.
+                                                                         -- > 2. [templates] 폴더에 새로운 head.html 파일 생성 후 잘라낸 태그부분을 붙여넣기 한다.
+                                                                         -- > 3. [base.html] 파일에서 잘라낸 위치에다가 {% include 'head.html' %}를 써주면 
+                                                                             [base.html] 과 [head.html]이 연결이 된다. 
+                                                                         -- > 4. [base.html]에서 <body></body> 부분에  {% block '작명' %}{% endblock %}  써준다
+                                                                                 그러면 startapp폴더 안에 있는 html과 연결 준비가 끝이다. 
+                                                                         -- > 5. [ [ 2021-11-27 ] [django] startapp 생성방법 ]에 4번에 만든 html 파일로 가서 
+                                                                                 base.html 파일을 불러오고  -- > {% extends 'base.html' %}를 써주면 불러와 진다.
+                                                                                 {% block '작명' %}{% endblock %}를 그대로 적어준다.
+                                                                         -- > 6. {% block '작명' %}
+                                                                                   <div>초기설정 완료!</div>
+                                                                                 {% endblock %}
+                                                                                 를 적어준다.
+                                                                         -- > 7. 실행하기   터미널창에 python manage.py runserver를 입력한 뒤 
+                                                                                 http://127.0.0.1:8000/total_view_app/view/ 경로로 접속하여 본다.
+                                                                         -- > 8. 최종적으로 [초기설정 완료!] 문구가 적힌걸 볼 수가 있다. -->
+
+
+
+                                            
+
+
+                            
+                                                      
 
 
 
