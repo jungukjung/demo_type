@@ -8,6 +8,7 @@
  [ 2021-11-27 ] [django] 초기 html 적용순서
  [ 2021-11-27 ] [django] startapp 생성방법
  [ 2021-11-27 ] [django] startproject 와 startapp 연결방법 
+ [ 2021-11-27 ] [django] css,js,fonts,외부파일 분리하기  
  
  
 
@@ -83,9 +84,6 @@
                                - '작명'.html
 
 
-
-
-
 [ [ 2021-11-27 ] [django] startproject 와 startapp 연결방법 ]
 ** django startproject 와 startapp 연결방법 **
 1. settings.py 파일을 열어서 생성한 startapp 폴더를 등록해주기  -- > INSTALLED_APPS = [] 에 '생성한 폴더명'
@@ -113,6 +111,19 @@
                                                                          -- > 7. 실행하기   터미널창에 python manage.py runserver를 입력한 뒤 
                                                                                  http://127.0.0.1:8000/total_view_app/view/ 경로로 접속하여 본다.
                                                                          -- > 8. 최종적으로 [초기설정 완료!] 문구가 적힌걸 볼 수가 있다.
+
+
+ [ 2021-11-27 ] [django] css,js,fonts,외부파일 분리하기 
+ ** css,js,fonts,외부파일 분리하기 **
+ 1. settings.py을 열어서 멘 밑에        -- > STATIC_URL = '/static/'
+                                        -- > STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+                                        -- > STATICFILES_DIRS = [ BASE_DIR / "static"] 
+                                        -- > 기재한다.
+ 2. 최상위 폴더에 static 폴더를 만들고 다시 css, js, fonts 풀더를 만든다. 
+ 3. css 폴더에 base.css 파일을 만들고   -- >  div {font -size}를 해서 기존에 만든 div 속성 값을 주어 연결이 잘 됬는지 확인한다.
+ 4. 최상위 폴더에 있는 templates 폴더를 열고 head.html 파일에 생성한 파일 경로를 적어준다.
+                                        -- >  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+ 5. 서버를 키고 잘 적용됬는지 확인한다.
 
 
 
