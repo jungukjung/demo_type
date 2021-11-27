@@ -7,7 +7,7 @@
  [ 2021-11-27 ] [django] 새로운 프로젝트 생성 및 실행
  [ 2021-11-27 ] [django] 초기 html 적용순서
  [ 2021-11-27 ] [django] startapp 생성방법
- <!-- [ 2021-11-27 ] [django] startproject 와 startapp 연결방법  -->
+ [ 2021-11-27 ] [django] startproject 와 startapp 연결방법 
  
  
 
@@ -86,7 +86,7 @@
 
 
 
-<!-- [ [ 2021-11-27 ] [django] startproject 와 startapp 연결방법 ]
+[ [ 2021-11-27 ] [django] startproject 와 startapp 연결방법 ]
 ** django startproject 와 startapp 연결방법 **
 1. settings.py 파일을 열어서 생성한 startapp 폴더를 등록해주기  -- > INSTALLED_APPS = [] 에 '생성한 폴더명'
 2. startproject에 있는 urls.py에 가서 경로 이어주기             -- > path('total_view_app/  [경로] ',include("total_view_app.urls")[url분할],name='total_view_app'),
@@ -112,7 +112,7 @@
                                                                                  를 적어준다.
                                                                          -- > 7. 실행하기   터미널창에 python manage.py runserver를 입력한 뒤 
                                                                                  http://127.0.0.1:8000/total_view_app/view/ 경로로 접속하여 본다.
-                                                                         -- > 8. 최종적으로 [초기설정 완료!] 문구가 적힌걸 볼 수가 있다. -->
+                                                                         -- > 8. 최종적으로 [초기설정 완료!] 문구가 적힌걸 볼 수가 있다.
 
 
 
