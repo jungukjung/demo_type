@@ -9,7 +9,7 @@
  [ 2021-11-27 ] [django] startapp 생성방법
  [ 2021-11-27 ] [django] startproject 와 startapp 연결방법 
  [ 2021-11-27 ] [django] css,js,fonts,외부파일 분리하기  
- 
+ [ 2021-11-27 ] [django] [util.css참조] css 약어로 간소화 
  
 
  [[ 2021-11-26 ] github 연결방법 정리]
@@ -124,6 +124,39 @@
  4. 최상위 폴더에 있는 templates 폴더를 열고 head.html 파일에 생성한 파일 경로를 적어준다.
                                         -- >  <link rel="stylesheet" href="{% static 'css/base.css' %}">
  5. 서버를 키고 잘 적용됬는지 확인한다.
+
+
+
+ [ 2021-11-27 ] [util.css참조] css 약어로 간소화
+ 1. 현재 적용된 약어               ** font-size [px] ** 
+                                   -- >  .fs-1~100 [font-size:0px~100px]
+                                   ** padding [px] **
+                                   -- >  .p-t-0~250 [padding-top:0px~250px]
+                                   -- >  .p-b-0~250 [padding-bottom:0px~250px]
+                                   -- >  .p-l-0~250 [padding-left:0px~250px]
+                                   -- >  .p-r-0~250 [padding-right:0px~250px]
+                                   ** margin [px] **
+                                   -- >  .m-t-0~250 [margin-top:0px~250px]
+                                   -- >  .m-b-0~250 [margin-bottom:0px~250px]
+                                   -- >  .m-l-0~250 [margin-left:0px~250px]
+                                   -- >  .m-r-0~250 [margin-right:0px~250px]
+                                   -- >  .m-l-r-auto[margin-left:auto;margin-right:auto;]
+                                   -- >  .m-l-auto[margin-left:auto;]
+                                   -- >  .m-r-auto[margin-right:auto;]
+                                   ** text ** 
+                                   .text-white[color:white;]
+                                   .text-black[color:black;]
+                                   .text-center[text-align:center]
+                                   .text-left[text-align:left]
+                                   .text-right[text-right:right]
+                                   ** 줄간격 **
+                                   -- >  .lh-1-0~2.9[line-height:1.0~2.9;]
+                                   ** display ** 
+                                   .dis-[none,block,inline,inline-block,flex]
+                                   ** position ** 
+                                   .pos-[relative,absolute,fixed]
+                                   ** float ** 
+                                   .float-[l,r]
 
 
 
