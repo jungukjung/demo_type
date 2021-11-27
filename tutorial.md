@@ -5,6 +5,7 @@
  [ 2021-11-26 ] venv 가상환경에 pip 파일을 설치하기 전 준비단계 
  [ 2021-11-26 ] django 설치 ! 
  [ 2021-11-27 ] django 새로운 프로젝트 생성 및 실행
+ [ 2021-11-27 ] django 초기 html 적용순서
  
 
  [[ 2021-11-26 ] github 연결방법 정리]
@@ -49,4 +50,15 @@
                            여기서 manage.py 파일은 django 파일을 실행시키기 위한 스위치 같은 기능을 가지고 있다.]
 4. python manage.py runserver 입력 후 나온 [http://127.0.0.1:8000/] 주소 창을 인터넷 창에 입력하고 접근해 본다.
                                            [The install worked successfully! Congratulations! 문구가 뜬다면 성공 ! ]
+
+
+[ [ 2021-11-27 ] django 초기 html 적용순서 ]
+**[django] 초기 html 적용순서 **
+1. 최상위 위치에서 templates 폴더를 생성한다.
+2. 기본 base가 될  html 파일을 생성한다. 
+3. project 폴더에 있는 settings.py 파일을 열고 [ TEMPLATES = [] ] 구간에 있는 곳에서 생성한 templates 폴더 경로를 적어준다.
+                                                                            - os.path.join(BASE_DIR,'templates') 적어주기 
+
+
+
  
