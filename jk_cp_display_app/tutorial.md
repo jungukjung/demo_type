@@ -1,4 +1,5 @@
  ** 타임라인 ** 
+ ** https://fontawesome.com/v5.15/icons?d=gallery&p=2 == > lcon site
  [ 2021-11-26 ] [github] 연결방법 정리 
  [ 2021-11-26 ] [venv]   가상환경 설치 
  [ 2021-11-26 ] [venv]   가상환경 설치방법 
@@ -11,6 +12,7 @@
  [ 2021-11-27 ] [django] css,js,fonts,외부파일 분리하기  
  [ 2021-11-27 ] [django] [util.css참조] css 약어로 간소화 
  [ 2021-11-27 ] [django] [side_bar] 만들기  - > html 파일 생성 
+ [ 2021-11-27 ] [django] [side_bar] 만들기  - > 상단 로고, 회사명, 반전 스위치 생성 
 
  
 
@@ -168,6 +170,8 @@
 4. base.css로 가서 [ *{padding:0;,margin:0;} ] 기본적으로 들어가 있는 padding , margin을 초기화 시킨다.
 
 
+ [ 2021-11-27 ] [django] [side_bar] 만들기  - > 상단 로고, 회사명, 반전 스위치 생성 
+ 1. margin 적용시 부모 태그도 같이 딸려서 이동된다면 부모 태그에 [display:fixed] 속성을 적용시킨다.
                                             
 
 
