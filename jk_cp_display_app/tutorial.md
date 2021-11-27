@@ -10,6 +10,8 @@
  [ 2021-11-27 ] [django] startproject 와 startapp 연결방법 
  [ 2021-11-27 ] [django] css,js,fonts,외부파일 분리하기  
  [ 2021-11-27 ] [django] [util.css참조] css 약어로 간소화 
+ [ 2021-11-27 ] [django] [side_bar] 만들기  - > html 파일 생성 
+
  
 
  [[ 2021-11-26 ] github 연결방법 정리]
@@ -158,6 +160,12 @@
                                    ** float ** 
                                    .float-[l,r]
 
+
+[ 2021-11-27 ] [django] [side_bar] 만들기  - > html 파일 생성
+1. 최상위 폴더에서 [side.html]파일 생성하기 
+2. base.html 파일에서 {% block content %}{% endblock %} 블럭 위에다가 {% include 'side_bar.html' %} 적어주기
+3. <div>side바 작업 구간 입니다.</div> 라는 문구를 적고 서버를 돌려 잘 작동하는지 확인해 본다.
+4. base.css로 가서 [ *{padding:0;,margin:0;} ] 기본적으로 들어가 있는 padding , margin을 초기화 시킨다.
 
 
                                             
