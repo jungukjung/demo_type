@@ -13,6 +13,7 @@
  [ 2021-11-27 ] [django] [util.css참조] css 약어로 간소화 
  [ 2021-11-27 ] [django] [side_bar] 만들기  - > html 파일 생성 
  [ 2021-11-27 ] [django] [side_bar] 만들기  - > 상단 로고, 회사명, 반전 스위치 생성 
+ [ 2021-11-28 ] [django] [side_bar] 만들기  - > 메뉴 등록 , 메뉴마다 아이콘 생성, 배치 조정 
 
  
 
@@ -172,6 +173,12 @@
 
  [ 2021-11-27 ] [django] [side_bar] 만들기  - > 상단 로고, 회사명, 반전 스위치 생성 
  1. margin 적용시 부모 태그도 같이 딸려서 이동된다면 부모 태그에 [display:fixed] 속성을 적용시킨다.
+
+
+
+[ 2021-11-28 ] [django] [side_bar] 만들기  - > 메뉴 등록 , 메뉴마다 아이콘 생성, 배치 조정
+1. display : fiex 속성을 이용하자!   --  flex-direction: column;
+
                                             
 
 
