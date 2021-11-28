@@ -180,6 +180,12 @@
 [ 2021-11-28 ] [django] [side_bar] 만들기  - > 메뉴 등록 , 메뉴마다 아이콘 생성, 배치 조정
 1. display : fiex 속성을 이용하자!   --  flex-direction: column;
 
+
+
+[ 2021-11-29 ] [django] [side_bar] 만들기  - > 메뉴바 숨김 상태일 때 생성, 숨겨질 때 나올 때 js 작동 완료 
+1. head.html 파일에 js 파일 생성 후 [js폴더에서] 등록 ! [등록 할 때는 link가 아닌 <script src="경로"></script>]
+2. function side_bar_up() {} 기본 형식 , $("#side_bar_up" [html태그 접근 할 때]).css("display","block" [속성변경 할 때])
+
                                             
 
 
