@@ -1,0 +1,39 @@
+    <!--   
+    페이지 메뉴구성 
+    1. only one          -- > 마이페이지   [자신의 정보 통계량 분석 페이지 [dashboard 역할]]
+    2. planner           -- > [코딩 공부] 달력에 계획등록, 달성률 표시  == > 일별 활동한 내역 작성  
+    3. error / tips      -- > [다른유저] 에러코드에 대한 조언이나  코딩짜면서 유용한 팁  
+    4. developer_note    -- > 피드백
+    -->
+
+
+<div id="side_bar_down" class ="bgblack_Indigo h-100_full w-60_px dis-flex" style="flex-direction: column; display: none; ">
+  
+    <!-- top -->
+    <section>
+        <div class ="w-60_px h-100_px">
+            <div class ="text-left w-33_px p-t-25 fs-30 m-l-12 h-45_px" style="flex-direction: row;">          
+                <i class="fab fa-artstation"></i>     
+            </div>
+        </div>
+    </section>
+
+    <!--conter -->    
+    <section id="center_menu" class="h-450_per m-t-50 m-b-250 fs-20 text-left" style="display: flex; flex-direction: column;">    
+        <a href="#1"><div class="footer_div_down"><div class="w-full bgred h-50_px p-t-10" style="box-sizing: content-box;"><i class="far fa-id-badge p-r-15" style="width: 25px; height: 25px;"></i></div></div></a>
+        <a href="#2"><div class="footer_div_down"><div class="w-full bgred h-50_px p-t-10" style="box-sizing: content-box;"><i class="far fa-list-alt p-r-15"style="width: 25px; height: 25px;"></i></div></div></a>
+        <a href="#3"><div class="footer_div_down"><div class="w-full bgred h-50_px p-t-10" style="box-sizing: content-box;"><i class="far fa-comment-dots p-r-15"style="width: 25px; height: 25px;"></i></div></div></a>  
+        <a href="#4"><div class="footer_div_down" style="border-bottom: 1px solid #344057;"><div class="w-full bgred h-50_px p-t-10" style="box-sizing: content-box;"><i class="fas fa-cog p-r-15" style="width: 25px; height: 25px;"></i></div></div></a>
+    </section>    
+
+    <!--bottom -->
+    <footer>
+        <div style="border-top: 1px solid #344057; text-align: right;">
+            <div class="w-full bgred h-50_px p-t-10 p-r-30">
+                <i class="fas fa-angle-right" onclick="side_bar_down()"></i>
+            </div>
+        </div>
+    </footer>
+ 
+
+</div>

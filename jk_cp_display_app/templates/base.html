@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" class="sizefull">
 {% include 'head.html' %}                                 <!-- lib 파일 저장소 -->
-<body class="sizefull">
-    {% include 'side_bar.html' %}                         <!-- 사이트바 메뉴 -->
+<body id="all" class="sizefull">
+    {% include 'side_bar_box/side_bar_up.html' %}                           <!-- 사이트바 메뉴 펼칠 때 -->
+    {% include 'side_bar_box/side_bar_down.html' %}                         <!-- 사이트바 메뉴 숨길 때-->
     {% block content %}{% endblock %}                     <!-- 핸들링 구간 -->
     
+
+    
+<script>
+</script> 
+
+
 </body>
 </html>
