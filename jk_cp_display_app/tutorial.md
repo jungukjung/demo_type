@@ -17,6 +17,7 @@
  [ 2021-11-29 ] [django] [side_bar] 만들기  - > 메뉴바 숨김 상태일 때 생성, 숨겨질 때 나올 때 js 작동 완료 
  [ 2021-11-29 ] [django] [side_bar] 만들기  - > js -- > ts로 업글 
  [ 2021-11-29 ] [django] [side_bar] 만들기  - > 슬라이드 효과 적용 ! 
+ [ 2021-11-29 ] [django] [side_bar] 만들기  - > 슬라이드 효과 어색한 부분 수정 ! 
 
  
 
@@ -190,18 +191,22 @@
 
 
 
- [ 2021-11-29 ] [django] [side_bar] 만들기  - > js -- > ts로 업글 
- 1. node.js 최신버전으로 설치한다. 
- 2. 터미널에서 npm install -g typescript 설치 
- 3. ts 폴더를 만들고 .ts 파일과 tsconfig.json 파일을 만들어 준다 [설정파일]
- 4. 다시 터미널에서 tsc -w 입력 -- > 터미널 창 끄지말기 [끄면 자동변환 안해줌]
- 5. 만약 에러가 뜬다면 vscode를 닫고 관리자 모드로 다시 열어서 터미널 창에 [Get-ExecutionPolicy]  [Set-ExecutionPolicy RemoteSigned] 순서대로 입력 ! 
+[ 2021-11-29 ] [django] [side_bar] 만들기  - > js -- > ts로 업글 
+1. node.js 최신버전으로 설치한다. 
+2. 터미널에서 npm install -g typescript 설치 
+3. ts 폴더를 만들고 .ts 파일과 tsconfig.json 파일을 만들어 준다 [설정파일]
+4. 다시 터미널에서 tsc -w 입력 -- > 터미널 창 끄지말기 [끄면 자동변환 안해줌]
+5. 만약 에러가 뜬다면 vscode를 닫고 관리자 모드로 다시 열어서 터미널 창에 [Get-ExecutionPolicy]  [Set-ExecutionPolicy RemoteSigned] 순서대로 입력 ! 
 
 
 
 
-  [ 2021-11-29 ] [django] [side_bar] 만들기  - > 슬라이드 효과 적용 ! 
-  1. visibility, transition 활용 !
+[ 2021-11-29 ] [django] [side_bar] 만들기  - > 슬라이드 효과 적용 ! 
+1. visibility, transition 활용 !
+
+
+[ 2021-11-29 ] [django] [side_bar] 만들기  - > 슬라이드 효과 어색한 부분 수정 ! 
+1. position : absolute 와 z-index를 활용하자 ! 
 
                                             
 
