@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'onlyoneapp',
+    'plannerapp',
+    'error_tips_app',
+    'developer_note',
 ]
 
 MIDDLEWARE = [
