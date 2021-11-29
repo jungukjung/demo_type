@@ -42,6 +42,7 @@ a{
 
 footer > div > div > i:hover {
     color: #344057;
+    visibility: visible;
 }
 
 
