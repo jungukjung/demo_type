@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" class="sizefull">
-{% include 'head.html' %}                                 <!-- lib 파일 저장소 -->
+{% include 'lib_box/head.html' %}                                           <!-- lib 파일 저장소 -->
 <body id="all" class="sizefull">
+
+
     {% include 'side_bar_box/side_bar_up.html' %}                           <!-- 사이트바 메뉴 펼칠 때 -->
-    {% include 'side_bar_box/side_bar_down.html' %}                         <!-- 사이트바 메뉴 숨길 때-->
-    {% block content %}{% endblock %}                     <!-- 핸들링 구간 -->
+    {% include 'side_bar_box/side_bar_down.html' %}                         <!-- 사이트바 메뉴 숨길 때 -->
+    {% include 'top_header_box/top_header.html' %}                          <!-- 상단 메인 해더 -->
+    {% block content %}{% endblock %}                                       <!-- 핸들링 구간 -->
     
-
-    
-<script>
-</script> 
-
-
 </body>
 </html>
