@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html lang="en" class="sizefull">
-{% include 'lib_box/head.html' %}                                           <!-- lib 파일 저장소 -->
+{% include 'lib_box/head.html' %}                                                                                           <!-- lib 파일 저장소 -->
 <body id="all" class="sizefull">
 
 
-    {% include 'side_bar_box/side_bar_up.html' %}                           <!-- 사이트바 메뉴 펼칠 때 -->
-    {% include 'side_bar_box/side_bar_down.html' %}                         <!-- 사이트바 메뉴 숨길 때 -->
-    {% include 'top_header_box/top_header.html' %}                          <!-- 상단 메인 해더 -->
-    {% block content %}{% endblock %}                                       <!-- 핸들링 구간 -->
+    {% include 'side_bar_box/side_bar_up.html' %}                                                                           <!-- 사이트바 메뉴 펼칠 때 -->
+    {% include 'side_bar_box/side_bar_down.html' %}                                                                         <!-- 사이트바 메뉴 숨길 때 -->
+    <div id="top" class ="w-full h-15_per p-l-330-per" style="  background-color : white">                                <!-- 상단 메인 해더 -->
+        <div class="p-l-30 p-t-30">
+            <div style="padding: 0 10px 10px 10px" class="fs-18 clblack">
+                {% block top_title_serve %}{% endblock %}
+            </div>
+
+            <div style="padding: 0 30px 5px 10px; font-family: 'Do Hyeon', sans-serif;" class="fs-40 clblack">
+                {% block top_title %}{% endblock %}
+            </div>
     
+            <hr class="m-t-0 m-b-0" style="background-color: rgb(225,225,225); height: 1px;">
+            <div class="clblack" style="padding: 20px 0 15px 10px;">
+                <a href="#">
+                    <span class="clblack" style="padding: 10px 20px 10px 20px; border: 1px solid rgb(225,225,225);">
+                        <i class="fas fa-sync m-r-10" style="color: black;"></i>새로고침
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    {% block content %}{% endblock %}                                                                                       <!-- 핸들링 구간 -->
+    {% include 'footer_box/footer.html' %}                                                                                  <!-- 밑단 구간 -->
 </body>
 </html>

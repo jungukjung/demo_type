@@ -18,6 +18,7 @@
  [ 2021-11-29 ] [django] [side_bar] 만들기  - > js -- > ts로 업글 
  [ 2021-11-29 ] [django] [side_bar] 만들기  - > 슬라이드 효과 적용 ! 
  [ 2021-11-29 ] [django] [side_bar] 만들기  - > 슬라이드 효과 어색한 부분 수정 ! 
+ [ 2021-11-30 ] [django] [top_header] 만들기  - > 기본틀 와성 {% block %} 처리 핸들링 처리 적용
 
  
 
@@ -207,6 +208,10 @@
 
 [ 2021-11-29 ] [django] [side_bar] 만들기  - > 슬라이드 효과 어색한 부분 수정 ! 
 1. position : absolute 와 z-index를 활용하자 ! 
+
+
+ [ 2021-11-30 ] [django] [top_header] 만들기  - > 기본틀 와성 {% block %} 처리 핸들링 처리 적용
+ 1. {% include %} 처리 후 {% block %} 적용 시 안 먹힘... 내가 못 하는건지 추후 수정예정
 
                                             
 
