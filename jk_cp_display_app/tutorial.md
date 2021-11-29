@@ -19,6 +19,7 @@
  [ 2021-11-29 ] [django] [side_bar] 만들기  - > 슬라이드 효과 적용 ! 
  [ 2021-11-29 ] [django] [side_bar] 만들기  - > 슬라이드 효과 어색한 부분 수정 ! 
  [ 2021-11-30 ] [django] [top_header] 만들기  - > 기본틀 와성 {% block %} 처리 핸들링 처리 적용
+ [ 2021-11-30 ] [startapp] 이름 변경 시 수정해야 할 부분 3가지
 
  
 
@@ -212,6 +213,14 @@
 
  [ 2021-11-30 ] [django] [top_header] 만들기  - > 기본틀 와성 {% block %} 처리 핸들링 처리 적용
  1. {% include %} 처리 후 {% block %} 적용 시 안 먹힘... 내가 못 하는건지 추후 수정예정
+
+
+
+  [ 2021-11-30 ] [startapp] 이름 변경 시 수정해야 할 부분 3가지
+  1. 해당 [startapp] 폴더 명 변경
+  2. [apps.py]에 name = '' 번경
+  3. [startproject]에 settings.py에 INSTALLED_APPS = [] 항목에 기존에 있던 폴더명을 지우고 새롭게 적은 폴더명 적기 
+  4. 추가적으로 [startapp]에 변경한 폴더로 가서 urls.py에 url 경로와 views.py에서 만든 함수 경로 변경
 
                                             
 
