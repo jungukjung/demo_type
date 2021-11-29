@@ -13,11 +13,8 @@ function side_bar_down() {
     
 }
 
-$(function(){
-    if ($("#all").css("width","1500px") > window.innerHeight){
-        $("#side_bar_up").css("display","none")
-        $("#side_bar_down").css("display","block")
-    }
-});
+
+
+
 
 

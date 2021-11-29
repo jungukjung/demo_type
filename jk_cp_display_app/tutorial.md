@@ -15,6 +15,7 @@
  [ 2021-11-27 ] [django] [side_bar] 만들기  - > 상단 로고, 회사명, 반전 스위치 생성 
  [ 2021-11-28 ] [django] [side_bar] 만들기  - > 메뉴 등록 , 메뉴마다 아이콘 생성, 배치 조정 
  [ 2021-11-29 ] [django] [side_bar] 만들기  - > 메뉴바 숨김 상태일 때 생성, 숨겨질 때 나올 때 js 작동 완료 
+ [ 2021-11-29 ] [django] [side_bar] 만들기  - > js -- > ts로 업글 
 
  
 
@@ -185,6 +186,15 @@
 [ 2021-11-29 ] [django] [side_bar] 만들기  - > 메뉴바 숨김 상태일 때 생성, 숨겨질 때 나올 때 js 작동 완료 
 1. head.html 파일에 js 파일 생성 후 [js폴더에서] 등록 ! [등록 할 때는 link가 아닌 <script src="경로"></script>]
 2. function side_bar_up() {} 기본 형식 , $("#side_bar_up" [html태그 접근 할 때]).css("display","block" [속성변경 할 때])
+
+
+
+ [ 2021-11-29 ] [django] [side_bar] 만들기  - > js -- > ts로 업글 
+ 1. node.js 최신버전으로 설치한다. 
+ 2. 터미널에서 npm install -g typescript 설치 
+ 3. ts 폴더를 만들고 .ts 파일과 tsconfig.json 파일을 만들어 준다 [설정파일]
+ 4. 다시 터미널에서 tsc -w 입력 -- > 터미널 창 끄지말기 [끄면 자동변환 안해줌]
+ 5. 만약 에러가 뜬다면 vscode를 닫고 관리자 모드로 다시 열어서 터미널 창에 [Get-ExecutionPolicy]  [Set-ExecutionPolicy RemoteSigned] 순서대로 입력 ! 
 
                                             
 
